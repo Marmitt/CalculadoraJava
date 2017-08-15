@@ -1,7 +1,14 @@
 package br.com.empresa.lib;
 
 public class Calculadora {
-	public double resultado;
+	private double resultado;
+	
+	public Calculadora() {
+	}
+	
+	public Calculadora(double valor) {
+		this.resultado = valor;
+	}
 	
 	public double getResultado() {
 		return this.resultado;

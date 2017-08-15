@@ -27,4 +27,11 @@ public class Calculadoratest {
 		calculadora.Somar(2.33);
 		assertEquals(calculadora.getResultado(), 2.33, 0);
 	}
+	@Test
+	public void criaCalculadoraComValorInicial() {
+		calculadora = new Calculadora(10);
+		assertEquals(calculadora.getResultado(), 10, 0);
+		calculadora.Somar(3);
+	assertEquals(calculadora.getResultado(), 13, 0); 
+	}
 }
